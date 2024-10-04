@@ -4,7 +4,7 @@ import com.learning.challengedependencyinjection.entities.Order;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ShippingServices {
+public class ShippingService {
     public double shipment(Order order) {
         if (order.getBasic() < 100) {
             return 20;
